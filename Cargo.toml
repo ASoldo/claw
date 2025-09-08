@@ -1,0 +1,19 @@
+[package]
+name = "claw"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+actix-web = "4.11.0"
+anyhow = "1.0.99"
+async-stream = "0.3.6"
+bytes = "1.10.1"
+rand = "0.9.2"
+reqwest = { version = "0.12.23", features = ["gzip", "brotli", "deflate", "cookies", "http2", "json", "rustls-tls"]}
+robotstxt = "0.3.0"
+scraper = "0.24.0"
+serde = { version = "1.0.219", features = ["derive"]}
+serde_json = "1.0.143"
+time = "0.3.43"
+tokio = { version = "1.47.1", features = ["rt-multi-thread", "macros", "time"] }
+url = "2.5.7"
